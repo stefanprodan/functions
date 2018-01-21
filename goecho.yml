@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  goecho:
+    lang: go-afterburn
+    handler: ./goecho
+    image: stefanprodan/func-goecho
